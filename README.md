@@ -21,7 +21,7 @@
 * Введите номер понравившегося фильма и нажмите Enter
 * Вам будет предложен список торрент файлов (советую выбирать тот, у которого больше всего сидов)
 * Введите номер понравившегося файла и через две секунды он будет загружен в вашу текущую директорию
-![example](https://github.com/Gornak40/toxin-cli/blob/master/examples/example.png)
+![example](https://github.com/Gornak40/toxin-cli/blob/master/examples/example1.png)
 
 ### Перспективы
 
