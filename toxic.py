@@ -24,7 +24,6 @@ def table(head, *args):
             pass
         except KeyboardInterrupt:
             exit(0)
-    return ind
 
 
 urlbs = lambda x: BeautifulSoup(get(x).content, 'lxml')
@@ -70,8 +69,9 @@ sizes = [float(x[1].text.strip('\xa0GB')) for x in films]
 seeds = [int(x[2].text) for x in films]
 peers = [int(x[3].text) for x in films]
 head = ['Размер', 'Сиды', 'Пиры']
-ind = table(head, sizes, seeds, peers)
-urlretrieve(torrs[ind], 'tor.torrent')
+indt = table(head, sizes, seeds, peers)
+filename = '{} {}.torrent'.format(names[ind], dates[ind]).replace(' ', '_')
+urlretrieve(torrs[indt], filename)
 
 
 bar = ProgressBar(maxval=100).start()
